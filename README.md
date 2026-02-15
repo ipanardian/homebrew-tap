@@ -14,7 +14,7 @@ A powerful modern alternative to the Unix ls command with beautiful box-drawn ta
 
 ```bash
 brew install lu-hut
-``
+```
 ### Features:
 - Beautiful box-drawn tables with colored borders
 - Stunning tree view display
@@ -28,4 +28,4 @@ For more information: https://github.com/ipanardian/lu-hut
 This tap is maintained by @ipanardian.
 
 ## License
-Individual formulae may have their own licenses. Please check each project's repository for details. EOF
+Individual formulae may have their own licenses. Please check each project's repository for details.
