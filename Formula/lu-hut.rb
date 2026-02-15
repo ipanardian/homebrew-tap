@@ -5,21 +5,21 @@
 class LuHut < Formula
   desc "A powerful modern alternative to the Unix ls command"
   homepage "https://github.com/ipanardian/lu-hut"
-  version "0.5.1"
+  version "0.5.2"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.1/lu-hut_0.5.1_Darwin_x86_64.tar.gz"
-      sha256 "a94d8a97ebda1bb3cf8f061b67f0647f824dbbdd9b94b3866f4304fdeb16a5d5"
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.2/lu-hut_0.5.2_Darwin_x86_64.tar.gz"
+      sha256 "5dfa1fcec391c60dfce24f0788a55d90a0dd7388f9cc55a7f49761ac53927705"
 
       def install
         bin.install "lu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.1/lu-hut_0.5.1_Darwin_arm64.tar.gz"
-      sha256 "644f2226cec3be8cdc2c14f60c31c6f4c444b108b22b6bb5a0a4b08723978884"
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.2/lu-hut_0.5.2_Darwin_arm64.tar.gz"
+      sha256 "e517f9f8d2acbc478c450e5d8c8a0c1285900986900280bec11181950eeead88"
 
       def install
         bin.install "lu"
@@ -29,15 +29,15 @@ class LuHut < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.1/lu-hut_0.5.1_Linux_x86_64.tar.gz"
-      sha256 "d1fc96c4fd79c261665cddaced74cb82605ea499d613659dfad51aeab56289c3"
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.2/lu-hut_0.5.2_Linux_x86_64.tar.gz"
+      sha256 "7a7745e3760cf4c0f7e9cb014c4c485ee24253ab7419b9009a735ab15ef021b5"
       def install
         bin.install "lu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.1/lu-hut_0.5.1_Linux_arm64.tar.gz"
-      sha256 "25c12b3a9d3dc3b136e1e33511d1266f4e5efa941122b88f537ba36c2a55f99e"
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.2/lu-hut_0.5.2_Linux_arm64.tar.gz"
+      sha256 "4d487c9e0c7920d4f8ffa78b9d6ddfb63d18984a87805f59d17646ed4730ff1f"
       def install
         bin.install "lu"
       end
