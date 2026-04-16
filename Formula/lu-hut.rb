@@ -5,23 +5,23 @@
 class LuHut < Formula
   desc "A powerful modern alternative to the Unix ls command"
   homepage "https://github.com/ipanardian/lu-hut"
-  version "0.5.3"
+  version "0.6.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.3/lu-hut_0.5.3_Darwin_x86_64.tar.gz"
-      sha256 "17ed6e9616feb9ac82e6e0306b5d034a3cde99c85a25041284a9725f6b01c453"
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.6.0/lu-hut_0.6.0_Darwin_x86_64.tar.gz"
+      sha256 "90a2b01e5fdf00d24474d5325ee182d2eb343d00e51b7b68e41613ec0458c058"
 
-      def install
+      define_method(:install) do
         bin.install "lu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.3/lu-hut_0.5.3_Darwin_arm64.tar.gz"
-      sha256 "94b9b75eaa270853c506044b9615e18e08eefd777db4cee96482609691d56468"
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.6.0/lu-hut_0.6.0_Darwin_arm64.tar.gz"
+      sha256 "b7678aca1adaeec3983c83a75fcb5123fc0326d10cd597620916dea21747f496"
 
-      def install
+      define_method(:install) do
         bin.install "lu"
       end
     end
@@ -29,16 +29,16 @@ class LuHut < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.3/lu-hut_0.5.3_Linux_x86_64.tar.gz"
-      sha256 "70357373fe54c9385f526b4c3f14b8a3b677a12a4212dc19afa2dc4aeabdfa81"
-      def install
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.6.0/lu-hut_0.6.0_Linux_x86_64.tar.gz"
+      sha256 "c2d4a352e93696d0a949892cca4871506f5f7e96701fe85d71fac59ef9e8af69"
+      define_method(:install) do
         bin.install "lu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ipanardian/lu-hut/releases/download/v0.5.3/lu-hut_0.5.3_Linux_arm64.tar.gz"
-      sha256 "d1892f06920f40ee9ff4c76aa309eb008fde7be00e080106c72c81585b52bb4a"
-      def install
+      url "https://github.com/ipanardian/lu-hut/releases/download/v0.6.0/lu-hut_0.6.0_Linux_arm64.tar.gz"
+      sha256 "ce634d1af5fa5eb616375338b074cf17915d456d1c38a7b46e55832a11031eb5"
+      define_method(:install) do
         bin.install "lu"
       end
     end
